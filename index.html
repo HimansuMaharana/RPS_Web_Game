@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Neo-RPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors!</h1>
+
+        <div class="rounds-selection">
+            <button id="bestOf3" class="round-button">Best of 3</button>
+            <button id="bestOf5" class="round-button">Best of 5</button>
+        </div>
+
+        <div class="game-area" style="display: none;">
+            <div class="choices">
+                <button id="rock" class="choice">
+                    <img src="rock.png" alt="Rock">
+                </button>
+                <button id="paper" class="choice">
+                    <img src="paper.png" alt="Paper">
+                </button>
+                <button id="scissors" class="choice">
+                    <img src="scissors.png" alt="Scissors">
+                </button>
+            </div>
+
+            <div class="results">
+                <p id="result-message"></p>
+                <div class="selections">
+                    <div id="player-selection" class="selection-display"></div>
+                    <div id="computer-selection" class="selection-display"></div>
+                </div>
+            </div>
+
+            <div class="scoreboard-container">
+                <div class="scoreboard">
+                    <div class="score">
+                        <p>Player: <span id="player-score">0</span></p>
+                    </div>
+                    <div class="score">
+                        <p>Computer: <span id="computer-score">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+                <p>Ties: <span id="ties">0</span></p>
+            </div>
+
+            <button id="replay" class="replay-button">Replay</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
